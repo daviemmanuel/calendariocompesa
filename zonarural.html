@@ -1,0 +1,89 @@
+﻿<!doctype html>
+
+<html>
+	<head> 
+		<title> ZONA RURAL </title>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Calendário simplificado da cidade de Gravatá" />
+		<meta name="author" content="Davi Emmanuel"/>
+	</head>
+
+	<body>
+		<img src="logo.png" width="100" alt="logomarca compesa"/>
+		<h1>ZONA RURAL - GRAVATÁ</h1>
+		<a href="calendariomes.pdf" target="_blank">PDF do Calendário</a>
+		<ul>
+			 <li>ÁREA 1: Distrito de Russinhas/ Matadoro Novo</li>
+			 <li>ÁREA 2: Sitio Boa Vista/ Sítio ladrilho/ Sítio Maria Izabel </li>
+			 <li>ÁREA 3: Prive Porta Florada/ Prive Bromélia/ Prive Maison Suisso </li>
+			 <li>ÁREA 4: Prive Montpellier/ Jureminha/ Sítio Mata do Coqueiro/ Lot Novo Horizonte </li>
+			 <li>ÁREA 5: Lot Ebenezer/ Cond Santa barbará/ Sítio casa Nova 3</li>
+			 <li>ÁREA 6: Sítio Curral do meio/ Sitio Casa Nova/ Prive mont Serrat/ Cond Jardim Imperial</li>
+			 <li>ÁREA 7: Lot. Serra do Maroto I/ Lot. Planalto/sítio Vendinha. </li>
+			 <li>ÁREA 8:  Aça-Flôr/ Lot. Estância Gravatá/ Cartapotós/Lot Panorama </li>
+			 <li>ÁREA 9:   Parte alta do Lot. Jardim do vale/ Fazenda Gramado </li>
+			 <li>ÁREA 10:  Serra das Craibas/Sítio Pitombeiras/ Assentamento santa Helena </li>
+			 <li>ÁREA 11:  Sitio Lagoa do Fernando/ Sítio Caboges/ Av Agreste </li>
+			 <li>ÁREA 12:  Sitio tanques e Parte alta da Av Agreste </li>
+
+			 <a href="index.html">Voltar ao menu principal</a>
+		</ul>
+
+		<label for="area">Selecione sua área de acordo com as informações apresentadas: </label>
+		<select id="area">
+			<option value="">--ESCOLHA--</option>
+			<option value="A1">Área 1</option>
+			<option value="A2">Área 2</option>
+			<option value="A3">Área 3</option>
+			<option value="A4">Área 4</option>
+			<option value="A5">Área 5</option>
+			<option value="A6">Área 6</option>
+			<option value="A7">Área 7</option>
+			<option value="A8">Área 8</option>
+			<option value="A9">Área 9</option>
+			<option value="A10">Área 10</option>
+			<option value="A11">Área 11</option>
+			<option value="A12">Área 12</option>
+		</select>
+
+		<p></p>
+
+	<script>
+	var select = document.querySelector('select');
+	var para = document.querySelector('p');
+
+	select.addEventListener('change', setArea);
+
+function setArea() {
+  var choice = select.value;
+
+  if (choice === 'A1') {
+    para.textContent = 'Você tem água nos dias 07, 08, 19, 20 e 31 de Maio';
+  } else if (choice === 'A2') {
+    para.textContent = 'Você tem água nos dias 09, 10, 21 e 22 de Maio';
+  } else if (choice === 'A3') {
+    para.textContent = 'Você tem água nos dias 05, 06, 07, 17, 18, 19, 29, 30 e 31 de Maio';
+  } else if (choice === 'A4') {
+    para.textContent = 'Você tem água nos dias 01, 02, 03, 04, 13, 14, 15, 16, 25, 26, 27 e 28 de Maio';
+  } else if (choice === 'A5') {
+    para.textContent = 'Você tem água nos dias 02, 03, 04, 14, 15, 16, 26, 27 e 28 de Maio ';
+  } else if (choice === 'A6') {
+    para.textContent = 'Você tem água nos dias 08, 09, 10, 20, 21 e 22 de Maio';
+  } else if (choice === 'A7') {
+    para.textContent = 'Você tem água nos dias 05, 06, 07, 17, 18, 19, 29, 30 e 31 de Maio';
+  } else if (choice === 'A8') {
+    para.textContent = 'Você tem água nos dias 05, 06, 17, 18, 29 e 30 de Maio';
+  } else if (choice === 'A9') {
+    para.textContent = 'Você tem água nos dias 09, 10, 21 e 22 de Maio';
+  } else if (choice === 'A10') {
+    para.textContent = 'Você tem água nos dias 07, 08, 19, 20 e 31 de Maio';
+  } else if (choice === 'A11') {
+    para.textContent = 'Você tem água nos dias 05, 06, 07, 17, 18, 19, 29, 30 e 31 de Maio';
+  } else {
+    para.textContent = 'Você tem água nos dias 08, 09, 20 e 21 de Maio';
+  }
+}
+
+	</script>
+	</body>
+</html>
