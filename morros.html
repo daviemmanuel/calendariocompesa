@@ -1,0 +1,58 @@
+﻿<!doctype html>
+
+<html>
+	<head> 
+		<title> MORROS </title>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Calendário simplificado da cidade de Gravatá" />
+		<meta name="author" content="Davi Emmanuel"/>
+	</head>
+
+	<body>
+		<img src="logo.png" width="100" alt="logomarca compesa"/>
+		<h1>MORROS - GRAVATÁ</h1>
+		<a href="calendariomes.pdf" target="_blank">PDF do Calendário</a>
+		<ul>
+			 <li>ÁREA 1: Parte alta da escadaria/ Alto do Cuzeiro/ Parte alta do loteamento do cruzeiro/ Rua do alecrim/lot Bosque da Colina/ parte alta Jardim petropolis, R Firmino cabral de Andrade</li>
+			 <li>ÁREA 2: Parte alta do CAIC / R. São Pedro /Alto do Quirino / Vilage da Serra/ Lot Luiziana/ lot Riacho do Mel/ Lot São Miguel </li>
+			 <li>ÁREA 3: Parte alta do Bairro novo/ Parte alta das Ruas: Pe. Auguto Soares/ Sâo Benedito/ São joaquim/ São caetano/ parte alta do lot. Jardim das Rosas/Rua João Soares de Oliveira e adjacências. </li>
+			 <li>ÁREA 4: Três vendas/ Parte baixa do CAIC/ Lot N. Srª. Da Conceição/ Privê Campestre Verde vale e Jurandir Correa de Melo
+ </li>
+
+			 <a href="index.html">Voltar ao menu principal</a>
+		</ul>
+
+		<label for="area">Selecione sua área de acordo com as informações apresentadas: </label>
+		<select id="area">
+			<option value="">--ESCOLHA--</option>
+			<option value="A1">Área 1</option>
+			<option value="A2">Área 2</option>
+			<option value="A3">Área 3</option>
+			<option value="A4">Área 4</option>
+		</select>
+
+		<p></p>
+
+	<script>
+	var select = document.querySelector('select');
+	var para = document.querySelector('p');
+
+	select.addEventListener('change', setArea);
+
+function setArea() {
+  var choice = select.value;
+
+  if (choice === 'A1') {
+    para.textContent = 'Você tem água nos dias 09, 10, 11, 21, 22 e 23 de Maio';
+  } else if (choice === 'A2') {
+    para.textContent = 'Você tem água nos dias 06, 07, 08, 18, 19, 20, 30 e 31 de Maio';
+  } else if (choice === 'A3') {
+    para.textContent = 'Você tem água nos dias 03, 04, 05, 15, 16, 17, 27, 28 e 29 de Maio';
+  } else {
+    para.textContent = 'Você tem água nos dias 01, 02, 12, 13, 14, 24, 25 e 26 de Maio';
+  }
+}
+
+	</script>
+	</body>
+</html>

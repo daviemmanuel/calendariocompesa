@@ -1,0 +1,115 @@
+﻿<!doctype html>
+
+<html>
+	<head> 
+		<title> CHÃ GRANDE </title>
+		<meta charset="utf-8"/>
+		<meta name="description" content="Calendário simplificado da cidade de Chã Grande" />
+		<meta name="author" content="Davi Emmanuel"/>
+	</head>
+
+	<body>
+		<img src="logo.png" width="100" alt="logomarca compesa"/>
+		<h1>CHÃ GRANDE</h1>
+		<a href="calendariomes.pdf" target="_blank">PDF do Calendário</a>
+		<ul>
+			 <li>ÁREA 1: Av 20 de Dezembro parte baixa; Rua São josé (até em frente a Igreja batista)</li>
+			 <li>ÁREA 2: R. Joaquim Francisco dos Santos; R. Maria Guadalupe </li>
+			 <li>ÁREA 3: R. Severino Caetano de Deus; R. Tiago B. Soares; R. josé Furtunato; Av. 20 de Dezembro(parte alta); R. Oscar B. Soares; R. mario G. de Moura; R. Carlos Miranda; R. Íris Queiros. Sítio Mumbucas </li>
+			 <li>ÁREA 4: R. do Sol; R. profª Anacleta; R. Noberto Cruz; Trav. Do Sol; Travessas. Mario Gomes de mouras 1,2 e 4; R. José Francisco de Paiva. Rua Edso </li>
+			 <li>ÁREA 5: R Florentino Gomes; R. Jorge Bernardo; R. Capitulino Gomes; R. Elvira Arruda Moura</li>
+			 <li>ÁREA 6: Trv Joao B Vasconcelos; Lot do Sossego; R. da Piedade; R. da Paz; Rua Cosme Amorim, Lot do Sossego.</li>
+			 <li>ÁREA 7: R Dom Miguel; R. da piedade; R. da Paz; Trav. João Vasconcelos; R. NovaDescoberta; R. Dom Augusto. Rua João Alves de Menezes; Rua Carmelita P Barros </li>
+			 <li>ÁREA 8: R. das Palmeiras A, B e C (parte baixa); Lot. São José </li>
+			 <li>ÁREA 9: lot São josé , Rua das Palmeiras A, B e C (parte alta) </li>
+			 <li>ÁREA 10: R. Joaquim J. Miranda. </li>
+			 <li>ÁREA 11: R João Prudente Santana; Vila do Matadouro. </li>
+			 <li>ÁREA 12: R Severino Oliveira; R Luiz Anastácio; R Inocêncio Oliveira; R José S. Rosal. </li>
+			 <li>ÁREA 13: Rua Santo Antônio (rua da água); Rua Paulo Fernando G dos Santos; Rua Manoel Faustino Queiroz; Av São José (lado da Prefeitura (àrea Centro). </li>
+			 <li>ÁREA 14: Rua Santa Inês; Rua José Alves varela (praça Pe Cícero); Rua São Severino; Loteamento Luciano Alves </li>
+			 <li>ÁREA 15: R Justino Gomes da Silva; R. São Silvestre; R Sta Rita, Trv Santa Rita (Parte alta da Camela) </li>
+			 <li>ÁREA 16: Vila Nilton Carneiro 1 </li>
+			 <li>ÁREA 17: Vila Nilton Carneiro 2 </li>
+			 <li>ÁREA 18: Vila Morada Nova </li>
+
+			 <a href="index.html">Voltar ao menu principal</a>
+		</ul>
+
+		<label for="area">Selecione sua área de acordo com as informações apresentadas: </label>
+		<select id="area">
+			<option value="">--ESCOLHA--</option>
+			<option value="A1">Área 1</option>
+			<option value="A2">Área 2</option>
+			<option value="A3">Área 3</option>
+			<option value="A4">Área 4</option>
+			<option value="A5">Área 5</option>
+			<option value="A6">Área 6</option>
+			<option value="A7">Área 7</option>
+			<option value="A8">Área 8</option>
+			<option value="A9">Área 9</option>
+			<option value="A10">Área 10</option>
+			<option value="A11">Área 11</option>
+			<option value="A12">Área 12</option>
+			<option value="A13">Área 13</option>
+			<option value="A14">Área 14</option>
+			<option value="A15">Área 15</option>
+			<option value="A16">Área 16</option>
+			<option value="A17">Área 17</option>
+			<option value="A18">Área 18</option>
+		</select>
+
+		<p></p>
+			
+			<script>
+	var select = document.querySelector('select');
+	var para = document.querySelector('p');
+
+	select.addEventListener('change', setArea);
+
+function setArea() {
+  var choice = select.value;
+
+  if (choice === 'A1') {
+    para.textContent = 'Só faltará água nos dias 20, 21, 22 e 23 de Maio';
+  } else if (choice === 'A2') {
+    para.textContent = 'Você tem água nos dias 21, 22 e 23 de Maio';
+  } else if (choice === 'A3') {
+    para.textContent = 'Você tem água nos dias 21, 22, 23 e 24 de Maio';
+  } else if (choice === 'A4') {
+    para.textContent = 'Você tem água nos dias 22, 23 e 24 de Maio';
+  } else if (choice === 'A5') {
+    para.textContent = 'Você tem água nos dias 01, 02, 25 e 26 de Maio ';
+  } else if (choice === 'A6') {
+    para.textContent = 'Você tem água nos dias 01, 02, 03, 25, 26, 27 de Maio';
+  } else if (choice === 'A7') {
+    para.textContent = 'Você tem água nos dias 03, 04, 05, 06, 27, 28, 29 e 30 de Maio';
+  } else if (choice === 'A8') {
+    para.textContent = 'Você tem água nos dias 07, 08 e 31 de Maio';
+  } else if (choice === 'A9') {
+    para.textContent = 'Você tem água nos dias 09 e 10 de Maio';
+  } else if (choice === 'A10') {
+    para.textContent = 'Você tem água nos dias 09, 10, 11 e 12 de Maio';
+  } else if (choice === 'A11') {
+    para.textContent = 'Você tem água nos dias 11, 12 e 13 de Maio';
+  } else if (choice === 'A12') {
+    para.textContent = 'Você tem água nos dias 13, 14 e 15 de Maio';
+  } else if (choice === 'A13') {
+    para.textContent = 'Você tem água nos dias 14, 15 e 16 de Maio';
+  } else if (choice === 'A14') {
+    para.textContent = 'Você tem água nos dias 16, 17, 18 e 19 de Maio';
+  } else if (choice === 'A15') {
+    para.textContent = 'Você tem água nos dias 16, 17, 18, 19 e 20 de Maio';
+  } else if (choice === 'A16') {
+    para.textContent = 'Você tem água nos dias 04, 05, 28 e 29 de Maio';
+  } else if (choice === 'A17') {
+    para.textContent = 'Você tem água nos dias 06, 07, 08, 30 e 31 de Maio';
+  } else {
+    para.textContent = 'Você tem água nos dias 17, 18, 19 e 20 de Maio';
+  }
+}
+
+	</script>
+
+
+	</body>
+</html>
